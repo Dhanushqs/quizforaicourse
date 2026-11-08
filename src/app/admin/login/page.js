@@ -38,7 +38,7 @@ export default function AdminLoginPage() {
         <h1 className="text-xl font-bold">Admin login</h1>
 
         <label className="mt-5 block text-sm font-medium" htmlFor="email">
-          Email
+          Email <span className="font-normal text-slate-500">(leave empty if using the admin password)</span>
         </label>
         <input
           id="email"
@@ -65,7 +65,7 @@ export default function AdminLoginPage() {
 
         <button
           type="submit"
-          disabled={busy || !email || !password}
+          disabled={busy || !password}
           className="mt-6 w-full rounded-lg bg-indigo-600 px-4 py-3 font-semibold text-white hover:bg-indigo-700 disabled:opacity-50"
         >
           {busy ? "Signing in…" : "Sign in"}
