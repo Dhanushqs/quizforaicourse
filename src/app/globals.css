@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Stops the page from jumping sideways on phones when a long word appears. */
+html {
+  -webkit-text-size-adjust: 100%;
+}
